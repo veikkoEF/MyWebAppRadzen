@@ -1,0 +1,48 @@
+﻿@page "/radzenTest"
+<h3>RadzenTest</h3>
+
+
+<RadzenMenu Click="MenuClick">
+    <RadzenMenuItem Text="File">
+        <RadzenMenuItem Text="Neu" Icon="add"></RadzenMenuItem>
+        <RadzenMenuItem Text="Öffnen" Icon="open_in_new"></RadzenMenuItem>
+        <RadzenMenuItem Text="Speichern" Icon="save"></RadzenMenuItem>
+    </RadzenMenuItem>
+    <RadzenMenuItem Text="Bearbeiten">
+        <RadzenMenuItem @oncl Text="Kopieren" Icon="content_copy"></RadzenMenuItem>
+        <RadzenMenuItem Text="Ausschneiden" Icon="content_cut"></RadzenMenuItem>
+        <RadzenMenuItem Text="Einfügen" Icon="content_paste"></RadzenMenuItem>
+    </RadzenMenuItem>
+</RadzenMenu>
+
+
+
+@*<div class="my-5">
+    <RadzenCard>
+        <RadzenLogin AllowRegister="true" AllowResetPassword="true"
+                     LoginText="Einloggen" UserText="Benutzername" PasswordText="Passwort"
+                     UserRequired="Benutzername erforderlich"
+                     PasswordRequired="Passwort erforderlich"
+                     RegisterText="Registrieren"
+                     RegisterMessageText="Sie haben noch keinen Account?"
+                     ResetPasswordText="Passwort zurücksetzen"
+                     Style="margin-bottom: 20px;" />
+    </RadzenCard>
+</div>*@
+
+@code {
+
+    void MenuClick(MenuItemEventArgs e)
+    {
+        if (e.Text == "Neu")
+        {
+            //
+        }
+        else if (e.Text == "Speichern")
+        {
+            //
+
+        }
+    }
+
+}
